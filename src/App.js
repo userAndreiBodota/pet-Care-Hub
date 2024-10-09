@@ -1,7 +1,19 @@
 import "./App.css";
+import Discover from "./components/DiscoverPage/Discover";
+import Home from "./main/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Router>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/discover" element={<Discover />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
