@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFirstAid, FaPaw, FaCapsules } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const PetCareSection = () => {
   return (
@@ -18,7 +19,7 @@ const PetCareSection = () => {
       <div className="options-container flex justify-center items-center">
         <div className="options flex gap-20 text-center">
           <div className="emergency w-80 bg-customGray h-48 rounded-lg flex items-center justify-center">
-            <button className="flex flex-col items-center">
+            <Link to="/emergency" className="flex flex-col items-center">
               <FaFirstAid
                 size={122}
                 color="white"
@@ -27,15 +28,15 @@ const PetCareSection = () => {
               <span className="text-customWhite font-bold tracking-wider">
                 Emergency Handling
               </span>
-            </button>
+            </Link>
           </div>
           <div className="pet-care w-80 bg-customGray rounded-lg flex items-center justify-center">
-            <button className="flex flex-col items-center">
+            <Link to="/general" className="flex flex-col items-center">
               <FaPaw size={122} color="white" style={{ marginBottom: "8px" }} />
               <span className="text-customWhite font-bold tracking-wider">
                 General Pet Care
               </span>
-            </button>
+            </Link>
           </div>
           <div className="managing w-80 bg-customGray rounded-lg flex items-center justify-center">
             <button className="flex flex-col items-center">
