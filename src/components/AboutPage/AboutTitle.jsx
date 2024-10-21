@@ -5,27 +5,27 @@ const AboutSection = () => {
     {
       name: "Andrei Bodota",
       email: "bodotaandrei@gmail.com",
-      imgSrc: "",
+      imgSrc: "/images/Andy.png",
     },
     {
       name: "Jm Dinglasan",
       email: "jm.dinglasan19@gmail.com",
-      imgSrc: "",
+      imgSrc: "/images/Jm.png",
     },
     {
       name: "Jemen Pastor",
       email: "pastorjemen@gmail.com",
-      imgSrc: "",
+      imgSrc: "/images/Jemen.png",
     },
     {
       name: "Jc Remolacio",
       email: "jcremolacio17@gmail.com",
-      imgSrc: "",
+      imgSrc: "/images/Jc.png",
     },
     {
       name: "Yuki Villanueva",
       email: "vgmiyu@gmail.com",
-      imgSrc: "",
+      imgSrc: "/images/Yuki.png",
     },
   ];
 
@@ -45,7 +45,7 @@ const AboutSection = () => {
               index >= 3 ? "md:col-span-1 lg:col-span-1" : ""
             }`}
           >
-            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 mr-4">
+            <div className="w-20 h-20 bg-gray-100 rounded-full flex-shrink-0 mr-4">
               {member.imgSrc ? (
                 <img
                   src={member.imgSrc}
@@ -63,20 +63,11 @@ const AboutSection = () => {
             </div>
 
             <div className="ml-4 flex-shrink-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-green-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 10h1v4H3v2h2v-2h4v2h2v-2h2v2h2v-2h4v2h2v-2h-1v-4h1v-2h-1v-4h-1V6h-1V4h-4V3h-2v1H7V3H5v1H3v4H2v2h1z"
-                />
-              </svg>
+              <img
+                src="/images/aboutUsIcon.png"
+                alt="Custom Icon"
+                className="h-6 w-6"
+              />
             </div>
           </div>
         ))}

@@ -11,25 +11,26 @@ const Motivation = () => {
         Inspiring Pet Owners to Provide Exceptional Care for Their Furry Friends
       </h2>
 
-      <div className="relative bg-gray-100 rounded-lg shadow-md p-8 w-4/5">
-        {/* Image */}
+      <div className="relative bg-gray-100 rounded-lg p-8 w-4/5">
         <img
-          src="/path/to/your/image.png"
+          src="/images/paw.png"
           alt="PetCare Hub Image"
-          className="absolute top-0 left-0 w-24 h-24 rounded-full object-cover -mt-8 -ml-8"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg z-0 opacity-30"
         />
 
-        {/* Text */}
-        <p className="text-gray-600 text-lg leading-relaxed">
-          &quot;The idea for PetCare Hub came from our love for animals and the
-          need to make pet care easier for owners. We saw that many pet owners
-          have a hard time finding trustworthy information about emergencies,
-          daily care, and health tips for their pets. Our goal is to create a
-          single platform where pet owners can easily find expert advice, ask
-          questions, and locate nearby vet clinics. By gathering all these
-          resources in one place, we hope to help pet owners take the best care
-          of their pets and make pet ownership a more enjoyable journey.&quot;
-        </p>
+        <div className="relative z-10">
+          <p className="text-gray-600 text-lg leading-relaxed">
+            &quot;The idea for PetCare Hub came from our love for animals and
+            the need to make pet care easier for owners. We saw that many pet
+            owners have a hard time finding trustworthy information about
+            emergencies, daily care, and health tips for their pets. Our goal is
+            to create a single platform where pet owners can easily find expert
+            advice, ask questions, and locate nearby vet clinics. By gathering
+            all these resources in one place, we hope to help pet owners take
+            the best care of their pets and make pet ownership a more enjoyable
+            journey.&quot;
+          </p>
+        </div>
       </div>
     </section>
   );

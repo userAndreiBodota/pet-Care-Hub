@@ -39,7 +39,7 @@ const PetCareSection = () => {
             </Link>
           </div>
           <div className="managing w-80 bg-customGray rounded-lg flex items-center justify-center">
-            <button className="flex flex-col items-center">
+            <Link to="/recognizing" className="flex flex-col items-center">
               <FaCapsules
                 size={122}
                 color="white"
@@ -48,7 +48,7 @@ const PetCareSection = () => {
               <span className="text-customWhite font-bold tracking-wider">
                 Recognizing and Managing Illness
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

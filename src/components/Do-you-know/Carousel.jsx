@@ -20,18 +20,15 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full max-w-4xl mx-auto bg-gray-100 rounded-lg p-8 flex items-center justify-between mb-12">
-      {/* Text Section */}
       <div className="w-2/3">
         <h2 className="text-lg font-bold">Do you know?</h2>
         <p className="text-sm mt-4">{texts[currentIndex]}</p>
       </div>
 
-      {/* Image Section */}
       <div className="w-1/3">
         <img src={Cat} alt="Cat Illustration" className="object-cover h-52" />
       </div>
 
-      {/* Dots */}
       <div className="absolute bottom-4 w-full flex justify-center space-x-2">
         {texts.map((_, index) => (
           <span

@@ -33,7 +33,7 @@ const EmergencyOptions = () => {
   ];
 
   return (
-    <div className="emergency-page p-6 flex justify-center items-center min-h-screen mt-12">
+    <div className="emergency-page p-6 flex justify-center items-center  mt-12">
       <div className="text-center max-w-6xl">
         <h1 className="font-semibold text-3xl mb-4 tracking-wider">
           Emergency Handling

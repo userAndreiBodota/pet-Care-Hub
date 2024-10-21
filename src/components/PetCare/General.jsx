@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 
 const General = () => {
   const generals = [
-    { name: "Exercising", image: exerciseImg, link: "/choking" },
-    { name: "Feeding", image: feedingImg, link: "/heat-stroke" },
-    { name: "Grooming", image: groomingImg, link: "/seizures" },
+    { name: "Exercising", image: exerciseImg, link: "/exercising" },
+    { name: "Feeding", image: feedingImg, link: "/feeding" },
+    { name: "Grooming", image: groomingImg, link: "/grooming" },
   ];
 
   return (
-    <div className="emergency-page p-6 flex justify-center items-center min-h-screen mt-2">
+    <div className="emergency-page p-6 flex justify-center items-center mt-8">
       <div className="text-center max-w-6xl">
         <h1 className="font-semibold text-3xl mb-4 tracking-wider">
           General Pet Care
